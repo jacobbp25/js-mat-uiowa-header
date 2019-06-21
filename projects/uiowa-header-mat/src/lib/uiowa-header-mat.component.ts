@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-uiowa-header-mat',
+  selector: 'uiowa-header-mat',
   template: `
     <p>
       uiowa-header-mat works!
