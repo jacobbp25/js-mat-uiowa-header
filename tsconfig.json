@@ -18,6 +18,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "uiowa-header-mat": [
+        "dist/uiowa-header-mat"
+      ],
+      "uiowa-header-mat/*": [
+        "dist/uiowa-header-mat/*"
+      ]
+    }
   }
 }

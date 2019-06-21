@@ -115,6 +115,41 @@
           }
         }
       }
+    },
+    "uiowa-header-mat": {
+      "projectType": "library",
+      "root": "projects/uiowa-header-mat",
+      "sourceRoot": "projects/uiowa-header-mat/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/uiowa-header-mat/tsconfig.lib.json",
+            "project": "projects/uiowa-header-mat/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/uiowa-header-mat/src/test.ts",
+            "tsConfig": "projects/uiowa-header-mat/tsconfig.spec.json",
+            "karmaConfig": "projects/uiowa-header-mat/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/uiowa-header-mat/tsconfig.lib.json",
+              "projects/uiowa-header-mat/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "mat-uiowa-header"
 }
