@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'uiowa-header-mat',
   template: `
     <p>
-      uiowa-header-mat works!
+      uiowa-header-mat works test!
     </p>
   `,
   styles: []
